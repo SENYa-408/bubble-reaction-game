@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nums">
+        <p>Score: <span id="score">0</span></p>
+        <p>HI: <span id="hi">0</span></p>
+      </div>
+      <div class="play-zone-wrapper" id="play-zone-wrapper">
+        <div class="play-zone" id="play-zone">
+          <div class="start-wrapper" id="start-wrapper">
+            <p class="start-title">Press to Start</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio src="/sounds/pop.mp3" id="pop-snd"></audio>
+    <audio src="/sounds/lose.mp3" id="lose-snd"></audio>
+    <audio src="/sounds/high-score.mp3" id="hi-snd"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

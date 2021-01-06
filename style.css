@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: #232b2b;
+
+  color: #fff;
+  font-size: 30px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nums {
+  padding: 5px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.play-zone-wrapper {
+  margin: auto;
+
+  width: 80%;
+  height: 80%;
+
+  border: 1px solid #fff;
+}
+
+.play-zone {
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+.bubble {
+  background-color: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  position: relative;
+
+  cursor: pointer;
+
+  animation-name: show;
+  animation-duration: 4s;
+}
+
+.start-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  cursor: pointer;
+}
+
+.start-title {
+  font-size: 40px;
+
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes show {
+  from {
+    width: 5px;
+    height: 5px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes hide {
+  from {
+    width: 80px;
+    height: 80px;
+  }
+  to {
+    width: 0;
+    height: 0;
+  }
+}
